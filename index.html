@@ -1,0 +1,62 @@
+<!--
+    Auhtor: Stathaki Aggeliki
+
+    Περιγραφή:
+
+        Σελίδα που φιλοξενεί έναν υπολογιστή εύρεσης εμβαδόν ορθογωνίου παραλληλογράμμου. 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions Project</title>
+        <script src ="aereaculturate.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body onload="onLoad()">
+    <div class="box">
+        <h1>Eύρεση εμβαδόν  ορθογωνίου παραλληλογράμμου</h1>
+        <p class="rule"><br>
+            <strong>Ορθογώνιο παραλληλόγραμμο</strong> , είναι το τετράπλευρο (σχήμα με 4 πλευρές), το οποίο έχει τις απέναντι πλευρές του παράλληλες (παραλληλόγραμμο) και τις 4 γωνίες του ορθές (90 μοίρες)
+
+            Ειδική περίπτωση ορθογωνίου παραλληλογράμμου, είναι το τετράγωνο, το οποίο επιπροσθέτως έχει και τις 4 πλευρές του ίσες
+            
+            Οποιοδήποτε τετράγωνο είναι ορθογώνιο παραλληλόγραμμο ενώ το αντίθετο δεν ισχύει, δηλαδή κάθε ορθογώνιο παραλληλόγραμμο δεν είναι απαραίτητα και τετράγωνο<br>
+             <br>
+             <div class="info">
+            <h3>Υπολογισμός Εμβαδού ορθογωνίου παραλληλογράμμου</h3>
+            <p><strong>E=a‧b</strong><br>
+
+                a= Πλευρά a (ή Ύψος)<br>
+                b= Βάση</p>
+            <img src="orthogonio.png" alt="Ορθογώνιο" >
+            </div>
+            
+        
+
+               
+               <div class="upologistis"> 
+                    <h3 >Υπολογιστής Εμβαδού ορθογωνίου παραλληλογράμμου </h3>
+                   
+                    
+                        <div class="form-group">
+                            <label>Βάση</label>
+                            <input type="number" class="form-control" id="b" />
+                        </div><div class="form-group">
+                            <label>Ύψος</label>
+                            <input type="number" class="form-control" id="h" />
+                        </div>
+                        <br>
+                        <center><button type="button" class="btn btn-primary" id="btn" onclick="calculateArea(this);">Υπολογισμός</button> <button  type="button" class="btn btn-success" onclick="reset();">Επαναφορά</button></center>
+                    </div>
+                    <div>
+                        <br />
+                        <div id="result"></div>
+                    </div>
+               </div>
+             
+            <script src="script.js"></script>
+            
+
+    </body>
+</html>
